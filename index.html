@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Penis Browser</title>
+</head>
+<body>
+    <h1>Penis Browser</h1>
+    <h3>a fork of Pizda browser</h3>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.ru">Google (RU)</a>
+    <a href="https://ya.ru">Yandex</a>
+    <div><input type="url" id="a2"/><button id="a1">Open</button></div>
+    <script>
+        function executeOnButtonClick(){
+            const sa = document.getElementById("a2");
+            location.href = sa.value
+        }
+        const button = document.getElementById("a1");
+        button.addEventListener("click", executeOnButtonClick);
+    </script>
+</body>
+</html>
